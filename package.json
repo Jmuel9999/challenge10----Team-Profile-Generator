@@ -1,0 +1,31 @@
+{
+  "name": "challenge10",
+  "version": "1.0.0",
+  "description": "OOP homework assignment",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --verbose test/*",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jmuel9999/challenge10----Team-Profile-Generator.git"
+  },
+  "author": "Jason Mueller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jmuel9999/challenge10----Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/Jmuel9999/challenge10----Team-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.1.0",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "jest": "^27.0.1"
+  }
+}
