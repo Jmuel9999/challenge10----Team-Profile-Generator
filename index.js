@@ -73,6 +73,13 @@ const questionPrompt = () => {
                     return false;
                 }
             }
+        },
+        {
+            type: 'confirm',
+            name: 'employeeAdd',
+            message: 'Would you like to add another employee?',
+            // when the user chooses 'no' to adding other employees: 
+            when: (answers) => answers.employeeAdd === false,
         }
     ]);
 };
