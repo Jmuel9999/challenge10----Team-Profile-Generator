@@ -78,9 +78,16 @@ const questionPrompt = () => {
             type: 'confirm',
             name: 'employeeAdd',
             message: 'Would you like to add another employee?',
-            // when the user chooses 'no' to adding other employees: 
-            when: (answers) => answers.employeeAdd === false,
-        }
+            // when the user chooses 'yes' to adding other employees: 
+            when: (answers) => answers.employeeAdd === true {
+                .then({
+                    type: 'checkbox',
+                    name: 'typeOfEmployee',
+                    message: 'Is this employee an engineer or an intern?',
+                    choices: ['Engineer', 'Intern']
+                })
+            }    
+        }        
     ]);
 };
 
